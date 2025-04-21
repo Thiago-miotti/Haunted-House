@@ -9,6 +9,10 @@ import GUI from 'lil-gui'
  */
 // Debug
 const gui = new GUI()
+window.addEventListener('keydown', (event) => {
+    if(event.key == 'h')
+        gui.show(gui._hidden)
+})
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
